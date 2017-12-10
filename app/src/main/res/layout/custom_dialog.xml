@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="나의 알바 설정"
+        android:textSize="50dp"
+        android:textStyle="bold"/>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cstdig_t1"
+            android:text="알바 이름 :"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+            />
+        <EditText
+            android:id="@+id/cstdig_edit1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="저장할 알바이름을 입력하세요."
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cstdig_t2"
+            android:text="시급 :"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:id="@+id/cstdig_edit2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="알바 시급을 입력하세요."
+            android:inputType="number"
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cstdig_t3"
+            android:text="근무시간 :"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:id="@+id/cstdig_edit3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="근무시간을 입력하세요.(X시간)"
+            android:inputType="number"
+            />
+    </TableRow>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/cstdig_b1"
+            android:text="취소"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"/>
+        <Button
+            android:id="@+id/cstdig_b2"
+            android:text="저장"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"/>
+    </LinearLayout>
+
+</TableLayout>

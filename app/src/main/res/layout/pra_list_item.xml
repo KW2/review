@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <TextView
+        android:id="@+id/pra_item_text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"/>
+    <TextView
+        android:id="@+id/pra_item_text_moneyAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/pra_item_text_name"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/pra_item_text_moneyMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/pra_item_text_moneyAll"
+        android:layout_alignParentBottom="true"/>
+    <Button
+        android:id="@+id/pra_item_btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="삭제"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:id="@+id/pra_item_btn_update"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="수정"
+        android:layout_toLeftOf="@id/pra_item_btn_delete"
+        android:layout_centerInParent="true"/>
+
+
+</RelativeLayout>

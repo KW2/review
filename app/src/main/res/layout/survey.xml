@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="저스트뮤직 아티스트"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+    <RadioGroup
+        android:id="@+id/sur_raG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/sur_ra1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="스윙스"
+            android:textSize="20dp"
+            android:onClick="surClick"/>
+        <RadioButton
+            android:id="@+id/sur_ra2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="빌스택스"
+            android:textSize="20dp"
+            android:onClick="surClick"/>
+        <RadioButton
+            android:id="@+id/sur_ra3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="블랙넛"
+            android:textSize="20dp"
+            android:onClick="surClick"/>
+        <RadioButton
+            android:id="@+id/sur_ra4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="기리보이"
+            android:textSize="20dp"
+            android:onClick="surClick"/>
+        <RadioButton
+            android:id="@+id/sur_ra5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="천재노창"
+            android:textSize="20dp"
+            android:onClick="surClick"/>
+        <RadioButton
+            android:id="@+id/sur_ra6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="씨잼"
+            android:textSize="20dp"
+            android:onClick="surClick"/>
+        <RadioButton
+            android:id="@+id/sur_ra7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="한요한"
+            android:textSize="20dp"
+            android:onClick="surClick"/>
+        <RadioButton
+            android:id="@+id/sur_ra8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="고어택스"
+            android:textSize="20dp"
+            android:onClick="surClick"/>
+        <RadioButton
+            android:id="@+id/sur_ra9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="오션검"
+            android:textSize="20dp"
+            android:onClick="surClick"/>
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/sur_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

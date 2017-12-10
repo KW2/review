@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/db_t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이름: "
+        android:textSize="40dp"/>
+    <EditText
+        android:id="@+id/db_e1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/db_t1"
+        android:layout_alignBottom="@id/db_t1"/>
+    <TextView
+        android:id="@+id/db_t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전화번호: "
+        android:textSize="40dp"
+        android:layout_below="@id/db_t1"
+        />
+    <EditText
+        android:id="@+id/db_e2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/db_t2"
+        android:layout_below="@id/db_e1"
+        android:layout_alignBottom="@id/db_t2"/>
+    <Button
+        android:id="@+id/db_b1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/db_t2"
+        android:text="추가"
+        android:onClick="insert"/>
+    <Button
+        android:id="@+id/db_b2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/db_b1"
+        android:text="탐색"
+        android:onClick="search"/>
+    <Button
+        android:id="@+id/db_b3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/db_b2"
+        android:text="모두삭제ㅔ"
+        android:onClick="delete"/>
+    <TextView
+        android:id="@+id/db_t3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/db_b3"
+        android:text="탐색창"
+        android:textSize="30dp"
+        android:onClick="clear"/>
+    <ScrollView
+            android:id="@+id/db_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/db_t3">
+
+        <LinearLayout
+            android:id="@+id/db_c"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/db_t3"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

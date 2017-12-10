@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/altdlg_b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="alterdialog / 삭제 대화상자"
+        android:onClick="dialogOnClick"/>
+    <Button
+        android:id="@+id/altdlg_b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="목록 대화상자 생성"
+        android:onClick="dialogOnClick"/>
+    <Button
+        android:id="@+id/altdlg_b3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="날짜 설정"
+        android:onClick="dialogOnClick"/>
+    <Button
+        android:id="@+id/altdlg_b4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="시간 설정"
+        android:onClick="dialogOnClick"/>
+    <Button
+        android:id="@+id/altdlg_b5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="수정/저장 커스텀 대화상자"
+        android:onClick="dialogOnClick"/>
+    <Button
+        android:id="@+id/altdlg_b6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="알바 완료 커스텀 대화상자"
+        android:onClick="dialogOnClick"/>
+
+</LinearLayout>
